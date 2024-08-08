@@ -95,11 +95,17 @@
   
 }
 
+.weather-info-item{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .main-card{
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 2.0rem;
+  font-size: 1.5rem;
   color: whitesmoke;
   outline: 1px black;
 }
@@ -142,7 +148,7 @@
 
 .card-storage{
 
-  font-size: 2.0rem;
+  font-size: 1.5rem;
   display: flex;
   justify-content: center;
   align-items: center;

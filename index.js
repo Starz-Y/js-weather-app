@@ -61,7 +61,7 @@ function domManipulation(jsonData){
             elementMaker('div',`misc-stats`,'',document.querySelector('.main-card'));   
 
         
-            elementMaker('div',`misc-item-temp`,`Temp Feel`,document.querySelector('.misc-stats'));    
+            elementMaker('div',`misc-item-temp`,`Temperature Feel`,document.querySelector('.misc-stats'));    
             elementMaker('div',`misc-item`,`${jsonData.days[i].feelslike} °F`,document.querySelector('.misc-item-temp'));  
 
 
@@ -78,12 +78,12 @@ function domManipulation(jsonData){
             elementMaker('div',`misc-item`,`${jsonData.days[i].precipprob}%`,document.querySelector('.misc-item-rain'));    
 
 
-            elementMaker('div',`misc-item-winds`,`wind-speed`,document.querySelector('.misc-stats'));    
+            elementMaker('div',`misc-item-winds`,`Sind Speed`,document.querySelector('.misc-stats'));    
             elementMaker('div',`misc-item`,`${jsonData.days[i].windspeed} mph`,document.querySelector('.misc-item-winds'));    
 
 
             elementMaker('div','weather-info-item-container',``,document.querySelector(`.main-card`));
-            elementMaker('div','weather-info-item-temp',`Current Temp`,document.querySelector(`.weather-info-item-container`));
+            elementMaker('div','weather-info-item-temp',`Current Temperature`,document.querySelector(`.weather-info-item-container`));
             elementMaker('div','weather-info-item',`${jsonData.days[i].temp} °F`,document.querySelector(`.weather-info-item-container`));
 
             const todayImage = document.createElement('img');
@@ -115,8 +115,8 @@ function domManipulation(jsonData){
             
    
 
-            elementMaker('li','weather-info-item-temp',`max:${jsonData.days[i].tempmax} °F`,document.querySelector(`.card${i} > .weather-info`));
-            elementMaker('li','weather-info-item-temp',`low:${jsonData.days[i].tempmin} °F`,document.querySelector(`.card${i} > .weather-info`));
+            elementMaker('li','weather-info-item-temp',`Temperature Max:${jsonData.days[i].tempmax} °F`,document.querySelector(`.card${i} > .weather-info`));
+            elementMaker('li','weather-info-item-temp',`Temperature Low:${jsonData.days[i].tempmin} °F`,document.querySelector(`.card${i} > .weather-info`));
             const weekImage = document.createElement('img');
             weekImage.classList.add("week-image");
             weekImage.setAttribute("src", `Images/SVG/1st Set - Monochrome/${jsonData.days[i].icon}.svg`);
