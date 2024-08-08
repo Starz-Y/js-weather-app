@@ -1,0 +1,167 @@
+/* https://www.joshwcomeau.com/css/custom-css-reset/ */
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  /* main css */
+ 
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    padding-bottom: 2rem;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('Images/noaa-QRBe3Ithczs-unsplash.jpg');
+    /* background-color: rgba(0,0,0,0.9);
+    background-blend-mode: lighten; */
+    background-size: cover;
+  }
+
+ .confirm-search{
+  border: none;
+  background: none;
+  cursor: pointer;
+ } 
+#weather-search{
+  width: 40rem;
+  height: 1.5rem;
+  font-size: 1.4rem;
+  border: none;
+  border-bottom: .2rem solid rgb(255, 255, 255);
+  outline: none;
+  background:transparent;
+  color: white;
+}
+::placeholder{
+  color: white;
+}
+.card-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+.main-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2.0rem;
+  color: whitesmoke;
+  outline: 1px black;
+}
+
+.misc-item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.misc-stats{
+  display: flex;
+  gap: 3.5rem;
+
+}
+
+.misc-item{
+  display: flex;
+
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: auto;
+  height: auto;
+
+}
+
+
+.today-image{ 
+  filter: invert(.9);
+}
+
+.week-image{
+  filter: invert(.9);
+  flex: 1;
+}
+
+.card-storage{
+
+  font-size: 2.0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  
+}
+
+.weather-info {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: start;
+  list-style-type: none;
+  color: white;
+  
+}
+
+
+li {
+  outline: black;
+}
+  
