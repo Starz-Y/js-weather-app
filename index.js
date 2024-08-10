@@ -78,7 +78,7 @@ function domManipulation(jsonData){
             elementMaker('div',`misc-item`,`${jsonData.days[i].precipprob}%`,document.querySelector('.misc-item-rain'));    
 
 
-            elementMaker('div',`misc-item-winds`,`Sind Speed`,document.querySelector('.misc-stats'));    
+            elementMaker('div',`misc-item-winds`,`Wind Speed`,document.querySelector('.misc-stats'));    
             elementMaker('div',`misc-item`,`${jsonData.days[i].windspeed} mph`,document.querySelector('.misc-item-winds'));    
 
 
